@@ -14,7 +14,11 @@ public class Myclient {
             BufferedReader reader = new BufferedReader(streamReader);
 
             String message = reader.readLine();
-            System.out.println("Мы тебя ждали, " + message);
+            String citi = reader.readLine();
+            String temp = reader.readLine();
+
+            System.out.println("Мы тебя ждали, " + message );
+            System.out.println("Температура в городе " + citi + " " + temp);
         } catch (IOException ex) {
             ex.getStackTrace();
         }
